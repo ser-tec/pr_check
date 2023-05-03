@@ -1,9 +1,10 @@
 # Odoo-pr-check
-this bash script allows you to see which OCA modules have been officially released versus unofficial ones.
+This bash script allows you to see which OCA modules have been officially released versus unofficial ones.
+The script simply compares the contents of two folders and notifies on screen and by mail (if set) the common folders with the same name.
+
 ## Structure:
-PR folder -> is where unofficial modules and temporary patches are stored
-OCA folder -> is where the official modules and final patches are stored
-The script simply compares the contents of the two folders and notifies on screen and by mail (if set) the common folders with the same name.
+* PR folder -> is where unofficial modules and temporary patches are stored
+* OCA folder -> is where the official modules and final patches are stored
 
 It can be execute manual or automaticaly.
 To run the script whenever the contents of the OCA directory change use the inotifywait program, which is part of the inotify-tools package.
