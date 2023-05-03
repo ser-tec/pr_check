@@ -16,7 +16,7 @@ $ cp pr_check.example.conf pr_check.conf
 ## Settings
 Define your own parameters pr_check.conf
 ```
-$ nano update.conf
+$ nano pr_check.conf
 ```
 ## Execution
 It can be execute manual or automaticaly.
