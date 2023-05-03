@@ -60,4 +60,4 @@ Enable the service to start automatically on boot:
 ```
 $ sudo systemctl enable pr_check.service
 ```
-Your script will run automatically on system startup.
+The script will run automatically on system startup.
