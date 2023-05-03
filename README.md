@@ -8,8 +8,8 @@ The script simply compares the contents of two folders and notifies on screen an
 
 ## Dependencies:
 
-inotify-tools
-mailutils + postfix o msmtp 
+* inotify-tools
+* mailutils + postfix o msmtp 
 
 ## Installation
 ```
@@ -35,6 +35,7 @@ $ ./path-pr-check/pr_check.sh
 ### Automatically
 This script runs in an infinite loop (while true). Use inotifywait to recursively monitor the OCA directory for create, delete, move and modify events. When it detects one of these events, it runs your main script.
 ```
+$ sudo apt-get install inotify-tools
 $ chmod +x /path/to/your/auto_pr_check.sh 
 $ ./path-pr-check/auto_pr_check.sh
 ```
