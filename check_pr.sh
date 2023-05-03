@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Import the configuration file
-. update.conf
+. pr_check.conf
 
 # Controlla se entrambi i percorsi esistono
 if [ -d "$PR" ] && [ -d "$OCA" ]; then
