@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Import the configuration file
+. update.conf
+
 # Controlla se entrambi i percorsi esistono
 if [ -d "$PR" ] && [ -d "$OCA" ]; then
     # Elenca le cartelle in entrambi i percorsi
