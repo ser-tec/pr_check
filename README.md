@@ -30,4 +30,5 @@ $ ./path-pr-check/pr_check.sh
 ### Automatically
 ```
 $ sudo apt-get install inotify-tools
+$ chmod +x /path/to/your/inotify/script.sh
 ```
