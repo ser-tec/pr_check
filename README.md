@@ -6,6 +6,11 @@ The script simply compares the contents of two folders and notifies on screen an
 * PR folder -> is where unofficial modules and temporary patches are stored
 * OCA folder -> is where the official modules and final patches are stored
 
+## Dependencies:
+
+inotify-tools
+mailutils + postfix o msmtp 
+
 ## Installation
 ```
 $ git clone https://github.com/ser-tec/pr_check.git
@@ -30,7 +35,6 @@ $ ./path-pr-check/pr_check.sh
 ### Automatically
 This script runs in an infinite loop (while true). Use inotifywait to recursively monitor the OCA directory for create, delete, move and modify events. When it detects one of these events, it runs your main script.
 ```
-$ sudo apt-get install inotify-tools
 $ chmod +x /path/to/your/auto_pr_check.sh 
 $ ./path-pr-check/auto_pr_check.sh
 ```
