@@ -21,7 +21,8 @@ if [ -d "$PR" ] && [ -d "$OCA" ]; then
 # Invia la lista delle cartelle duplicate via e-mail solo se $EMAIL non è vuota
 if [ -n "$duplicate_folders" ]; then
     if [ -n "$EMAIL" ]; then
-        echo -e "Cartelle duplicate trovate:$duplicate_folders" | mail -s "Report cartelle duplicate" $EMAIL
+        host_name=$(hostname)
+        echo -e "Host: $host_name\n\nCartelle duplicate trovate:$duplicate_folders" | mail -s "Report cartelle duplicate" $EMAIL
     else
         echo "L'indirizzo e-mail non è impostato. Impossibile inviare il report."
     fi
